@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+Sing up
+</mat-toolbar>
+<div class="container margin-top-60 logo" >
+  <div class="row justify-content-around align-items-center">
+      <mat-form-field class="col-3">
+
+    <mat-select [(value)]="selected" >
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">Option 2</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+    <mat-form-field class="col-9">
+      <input matInput placeholder="Phone number">
+    </mat-form-field>
+    <div class="col-sm-3">
+      <button mat-raised-button class="" routerLink="/Verify" color="primary">
+        Submint
+      </button>
+    </div>
+  </div>
+</div>

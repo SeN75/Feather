@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  Client Requst
+</mat-toolbar>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let Clients of Client">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{Clients.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{Clients.city}}
+      </mat-panel-description>
+      
+    </mat-expansion-panel-header>
+    {{Clients.details}}
+  </mat-expansion-panel>
+</mat-accordion>
+<button mat-mini-fab color="primary" style="position:fixed; right:10px; bottom: 80px">
+  <mat-icon aria-label="Example icon-button with a heart icon">insert_emoticonng </mat-icon>
+</button>
+<div style="position: fixed; bottom: 0; width: 100%">
+  <app-navbar></app-navbar>
+</div>

@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+    <button mat-button class="padding-0" routerLink="/result"> <mat-icon>keyboard_backspace</mat-icon></button>
+    <span style="flex: 0.1 0 auto"></span>
+    Review of the requst
+  </mat-toolbar>
+  
+  <div class="review margin-top-30">
+   <div class="container">
+     <div class="row justify-content-around">
+       <div class="col-3">
+          <button mat-fab color="accent"><mat-icon color="primary">face</mat-icon></button>
+       </div>
+       <div class="col-6">
+         500 SAR
+       </div>
+       <div class="col-6">
+         <div>
+           Saleh saleh
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="container margin-top-30">
+    <div class="row justify-content-around">
+        <mat-form-field class="col-12">
+            <textarea matInput placeholder="Leave a comment" rows="5"></textarea>
+          </mat-form-field>
+          <button mat-raised-button color="primary" class="col-6">Accept</button>
+          
+    </div>
+  </div>
+  <button mat-mini-fab color="primary" style="position:fixed; right:10px; bottom: 80px">
+    <mat-icon aria-label="Example icon-button with a heart icon">insert_emoticonng </mat-icon>
+</button>
+<div style="position: fixed; bottom: 0; width: 100%">
+    <app-navbar></app-navbar>
+</div>

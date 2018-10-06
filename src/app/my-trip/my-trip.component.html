@@ -1,0 +1,72 @@
+<mat-toolbar color="primary">
+    <button mat-button class="padding-0" routerLink="/home"> <mat-icon>keyboard_backspace</mat-icon></button>
+    <span style="flex: 0.1 0 auto"></span>
+  My Trips
+</mat-toolbar>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        In awiat
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/history" *ngFor="let trip of AwitTrips" class="margin-top-20 trip">
+        <div>
+        </div>
+        <div>
+          <div>
+            {{trip.datetime}}
+          </div>
+          <div>
+            {{trip.stars}}
+          </div>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        done
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="." *ngFor="let trip of DoneTrips" class="margin-top-20 trip">
+          <div>
+            {{trip.price}}SAR
+          </div>
+          <div>
+            <div>
+              {{trip.datetime}}
+            </div>
+            <div>
+              {{trip.stars}}
+            </div>
+          </div>
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        canceled
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item href="." *ngFor="let trip of CanceledTrips" class="margin-top-20 trip">
+          <div>
+            {{trip.price}}SAR
+          </div>
+          <div>
+            <div>
+              {{trip.datetime}}
+            </div>
+            <div>
+              {{trip.stars}}
+            </div>
+          </div>
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>

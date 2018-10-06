@@ -1,0 +1,6 @@
+<mat-toolbar color="">
+  <button mat-icon-button *ngFor="let item of items" style="flex: auto" routerLink="{{item.path}}"> 
+
+    <mat-icon aria-label="Example icon-button with a heart icon">{{item.icon}} </mat-icon>
+  </button>
+</mat-toolbar>

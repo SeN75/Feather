@@ -1,0 +1,57 @@
+<mat-toolbar color="primary">
+  New Trip
+</mat-toolbar>
+  
+<div class="container">
+  <div class="row justify-content-around">
+    <mat-form-field class="col-12">
+      <mat-select >
+        <mat-option *ngFor="let option of cityOptions" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+        <input  matInput type="date" />
+    </mat-form-field>
+  </div>
+  <div class="row justify-content-around align-items-center">
+    <div class="col-12">
+      Preferred time
+    </div>
+   
+    <mat-form-field class="col-6">
+      <input matInput placeholder="From">
+    </mat-form-field>
+   
+    <mat-form-field class="col-6">
+      <input matInput placeholder="To">
+    </mat-form-field>
+  </div>
+  <div class="row">
+     <div class="col-12 margin-bottom-20">
+      Interest in
+    </div>
+    <mat-checkbox class="col-12" *ngFor="let checked of catsOptions">{{checked}}</mat-checkbox>
+  </div>
+  <div class="row justify-content-around ">
+      <mat-form-field class="col-6">
+          <input matInput placeholder="Number of pepole">
+        </mat-form-field> 
+        <mat-form-field class="col-6">
+          <input matInput placeholder="special cases"/> 
+        </mat-form-field>
+  </div>
+  <div class="col-12 margin-top-30" style="margin-bottom:72px;">
+      <button mat-raised-button class="" style="width:100%" color="primary" routerLink="/result">
+        Place order
+      </button>
+    </div>
+</div>
+
+<button mat-mini-fab color="primary" style="position:fixed; right:10px; bottom: 80px">
+  <mat-icon aria-label="Example icon-button with a heart icon">insert_emoticonng </mat-icon>
+</button>
+<div style="position: fixed; bottom: 0; width: 100%">
+  <app-navbar></app-navbar>
+</div>

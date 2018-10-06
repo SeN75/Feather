@@ -1,0 +1,31 @@
+<div class="contanier">
+  <div class="row justify-content-around">
+    <div class="col-11 margin-top-20">
+      Submit your offer
+    </div>
+    <mat-form-field class="col-11">
+      <mat-select [(value)]="selected">
+        <mat-option value="city">city</mat-option>
+        <mat-option value="option1">Option 1</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="col-5">
+      <input matInput placeholder="Phone number">
+    </mat-form-field>
+    <mat-form-field class="col-5">
+      <input matInput placeholder="Phone number">
+    </mat-form-field>
+  </div>
+  <div class="row justify-content-around">
+    <mat-form-field class="col-11">
+      <textarea matInput placeholder="Leave a comment" rows="5"></textarea>
+    </mat-form-field>
+    <button mat-raised-button class="col-6">Accept</button>
+
+  </div>
+</div><button mat-mini-fab color="primary" style="position:fixed; right:10px; bottom: 80px">
+  <mat-icon aria-label="Example icon-button with a heart icon">insert_emoticonng </mat-icon>
+</button>
+<div style="position: fixed; bottom: 0; width: 100%">
+  <app-navbar></app-navbar>
+</div>

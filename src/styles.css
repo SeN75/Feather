@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@import "src/SeN/SeN_FM.css";
+ 
+.logo{
+    background-image: url('./Untitled-6.jpg');
+    background-position: center;
+    background-size:  cover;
+    background: no-repeat;
+    min-height: 600px;
+}
